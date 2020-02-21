@@ -9,5 +9,5 @@ import (
 func main() {
 
 	http.HandleFunc("/", controller.FileServer())
-	http.ListenAndServe("127.0.0.1:3000", nil)
+	http.ListenAndServe("0.0.0.0:8080", nil)
 }
