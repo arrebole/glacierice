@@ -1,6 +1,9 @@
 <template>
     <div class="split">
-        <h2>{{ text }}</h2>    
+        <h2>{{ text }}</h2>
+        <div style="display:flex">
+            <slot name="githublink"></slot>
+        </div>    
     </div>    
 </template>
 
@@ -13,10 +16,13 @@ export default {
 
 
 <style lang="css" scoped>
-.split > h2 {
-    margin: 15px auto;
+.split{
     max-width: 900px;
-    text-indent: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.split > h2 {
     color: rgb(65, 65, 65);
 }
 </style>

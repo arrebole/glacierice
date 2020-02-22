@@ -1,6 +1,8 @@
 <template>
     <div class="piece">
-        <h2>{{ title }}</h2>
+        <router-link :to="to">
+            <h2>{{ title }}</h2>
+        </router-link>
         <p>{{ content }}</p>    
     </div>    
 </template>
@@ -8,7 +10,7 @@
 
 <script>
 export default {
-    props:["title","content"]
+    props:["title","content","to"]
 }
 </script>
 
@@ -20,8 +22,15 @@ export default {
     padding: 60px 20px 10px 20px;
     margin: 5px;
 }
+.piece >a{
+    text-decoration: none;
+    color: rgb(34, 33, 33);
+}
+.piece >a:hover{
+    text-decoration: underline rgb(34, 22, 136);
+    color: rgb(43, 76, 226);
+}
 .piece:hover{
-    cursor: pointer;
     border: 1px solid rgb(13, 176, 197);
 }
 .piece > h2{

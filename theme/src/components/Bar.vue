@@ -4,7 +4,9 @@
             <slot name="cover"></slot>
         </div>
         <div class="bar-text">
-            <h4>{{ title }}</h4>
+            <router-link :to="to">
+                <h4>{{ title }}</h4>
+            </router-link>
             <p>{{ content }}</p>
         </div>
         <img class="bar-log" src="../assets/github-logo.png"/>
@@ -14,7 +16,7 @@
 
 <script>
 export default {
-    props:["title", "content"]
+    props:["title", "content", "to"]
 }
 </script>
 
@@ -29,7 +31,6 @@ export default {
     border: 1px solid rgb(255, 255, 255);
 }
 .bar:hover{
-    cursor: pointer;
     border: 1px solid rgb(128, 50, 50);
 }
 
@@ -38,10 +39,17 @@ export default {
     padding: 20px 20px;
     
 }
-.bar-text > h4{
+.bar-text > a > h4{
     margin: 5px;
     color: rgb(65, 65, 65);
 }
+.bar-text > a{
+    text-decoration: none;
+}
+.bar-text > a:hover{
+    text-decoration: underline rgb(34, 22, 136);
+}
+
 .bar-text > p{
     margin: 5px;
     color: rgb(105, 105, 105);

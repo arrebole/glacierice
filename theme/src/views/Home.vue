@@ -5,18 +5,18 @@
 
     <Split text="Export Data"></Split>
     <div class="export-data">
-      <Piece title="Data Resource" content="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam."></Piece>
-      <Piece title="Open Data API" content="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam."></Piece>  
-      <Piece title="Contribute" content="Share your own work with us on Github. Include but not limited to data, model, code and wikis."></Piece>    
+      <Piece to="data-resource" title="Data Resource" content="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam."></Piece>
+      <Piece to="open-data-api" title="Open Data API" content="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam."></Piece>  
+      <Piece to="contribute" title="Contribute" content="Share your own work with us on Github. Include but not limited to data, model, code and wikis."></Piece>    
     </div>
   
     <Split text="Papers and Wiki"></Split>
     <div class="center">
-        <Bar title="Crash Course" content="course for epidemic modeling">
+        <Bar to="crash-course" title="Crash Course" content="course for epidemic modeling">
           <template v-slot:cover><img class="bar-cover" src="../assets/crash-course.png"/></template>
         </Bar>
         
-        <Bar title="Papers" content="Collection of recent research">
+        <Bar to="papers" title="Papers" content="Collection of recent research">
           <template v-slot:cover><img class="bar-cover" src="../assets/paper.png" /></template>
         </Bar>
     </div>
@@ -24,7 +24,7 @@
 
     <Split text="Write Your Own Models"></Split>
     <div class="center">
-      <Bar title="Models of the Day" content="R, Jupyter Notebook, Python">
+      <Bar to="models" title="Models of the Day" content="R, Jupyter Notebook, Python">
         <template v-slot:cover><img class="bar-cover" src="../assets/math.png"/></template>
       </Bar>
     </div>
@@ -55,6 +55,12 @@ import Bar from "../components/Bar.vue";
 
 export default {
   name: "Home",
+  methods:{
+    jump(e,a){
+      console.log(e,a)
+    }
+
+  },
   components: {
     Banner,
     Split,
