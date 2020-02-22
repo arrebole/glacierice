@@ -30,6 +30,9 @@ export default {}
 .banner-text-line > div{
     display: inline;
     padding: 5px;
-    font-size: 30px;
+    font-size: 28px;
+}
+.banner-text >p{
+    font-size: 13px;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Header></Header>
+    <!-- <Header></Header> -->
     <Banner></Banner>
 
     <Split text="Export Data"></Split>
@@ -38,7 +38,6 @@
 
 <script>
 // @ is an alias to /src
-import Header from "../components/Header.vue";
 import Banner from "../components/Banner.vue";
 import Split from "../components/Split.vue";
 import Piece from "../components/Piece.vue";
@@ -56,7 +55,6 @@ export default {
     Footer,
     Visualizations,
     InteractiveModels,
-    Header,
     Bar,
   }
 };
