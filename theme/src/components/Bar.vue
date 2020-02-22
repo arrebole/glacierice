@@ -1,10 +1,13 @@
 <template>
     <div class="bar">
-        <div class="img"></div>
+        <div class="img">
+            <slot name="cover"></slot>
+        </div>
         <div class="bar-text">
             <h4>{{ title }}</h4>
             <p>{{ content }}</p>
         </div>
+        <img class="bar-log" src="../assets/github-logo.png"/>
     </div>    
 </template>
 
@@ -19,10 +22,11 @@ export default {
 <style lang="css" scoped>
 .bar{
     display: flex;
-    background-color: #fff;
-    font-size: 14px;
-    border: 1px solid rgb(255, 255, 255);
+    height: 90px;
     margin: 10px 20px;
+    font-size: 14px;
+    background-color: #fff; 
+    border: 1px solid rgb(255, 255, 255);
 }
 .bar:hover{
     cursor: pointer;
@@ -30,6 +34,7 @@ export default {
 }
 
 .bar-text{
+    flex: 6;
     padding: 20px 20px;
     
 }
@@ -43,6 +48,11 @@ export default {
 }
 .img{
     width: 100px;
-    background-color: rgb(177, 177, 177);
+    /* background-color: rgb(177, 177, 177); */
+}
+.bar-log{
+    max-width: 40px;
+    height: 50px;
+    padding: 20px 30px;
 }
 </style>

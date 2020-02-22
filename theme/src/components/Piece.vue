@@ -18,7 +18,6 @@ export default {
     background-color: #fff;
     border: 1px solid rgb(255, 255, 255);
     padding: 60px 20px 10px 20px;
-    max-width: 220px;
     margin: 5px;
 }
 .piece:hover{

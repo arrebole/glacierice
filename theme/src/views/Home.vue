@@ -12,14 +12,21 @@
   
     <Split text="Papers and Wiki"></Split>
     <div class="center">
-        <Bar title="Crash Course" content="course for epidemic modeling"></Bar>
-        <Bar title="Papers" content="Collection of recent research"></Bar>
+        <Bar title="Crash Course" content="course for epidemic modeling">
+          <template v-slot:cover><img class="bar-cover" src="../assets/crash-course.png"/></template>
+        </Bar>
+        
+        <Bar title="Papers" content="Collection of recent research">
+          <template v-slot:cover><img class="bar-cover" src="../assets/paper.png" /></template>
+        </Bar>
     </div>
 
 
     <Split text="Write Your Own Models"></Split>
     <div class="center">
-      <Bar title="Models of the Day" content="R, Jupyter Notebook, Python"></Bar>
+      <Bar title="Models of the Day" content="R, Jupyter Notebook, Python">
+        <template v-slot:cover><img class="bar-cover" src="../assets/math.png"/></template>
+      </Bar>
     </div>
 
     <Split text="Interactive Models"></Split>
@@ -77,6 +84,11 @@ export default {
   margin: auto;
   width: 100%;
   max-width: 930px;
+}
+.bar-cover{
+  width: 90px;
+  height: 80px;
+  padding: 5px;
 }
 @media screen and (max-width: 720px) {
    .export-data{
