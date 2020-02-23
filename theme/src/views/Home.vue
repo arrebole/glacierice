@@ -56,10 +56,6 @@ import Bar from "../components/Bar.vue";
 export default {
   name: "Home",
   methods:{
-    jump(e,a){
-      console.log(e,a)
-    }
-
   },
   components: {
     Banner,
