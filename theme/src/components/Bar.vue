@@ -24,6 +24,7 @@ export default {
 <style lang="css" scoped>
 .bar{
     display: flex;
+    align-items: center;
     height: 90px;
     margin: 10px 20px;
     font-size: 14px;
@@ -61,6 +62,6 @@ export default {
 .bar-log{
     max-width: 40px;
     height: 50px;
-    padding: 20px 30px;
+    padding: 0 10px;
 }
 </style>

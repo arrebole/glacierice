@@ -19,6 +19,7 @@ export default {
 .split{
     max-width: 900px;
     margin: auto;
+    padding: 0px 20px;
     display: flex;
     justify-content: space-between;
 }
