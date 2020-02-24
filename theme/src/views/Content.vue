@@ -1,9 +1,11 @@
 <template>
     <div class="content-page">
         <Banner></Banner>
-        <Split :text="title"></Split>
+        <Split :text="$route.name"></Split>
         <article class="min-height10">
-            <section class="conter min-height6 bg-white max-with9"></section>
+            <section class="conter bg-white markdown-body" v-html="source">
+
+            </section>
         </article>
         <Footer></Footer>
     </div>
@@ -19,7 +21,12 @@ export default {
     name:"Content",
     data(){
         return {
-            title:"Title"
+            source: "Loading"
+        }
+    },
+    created(){
+        if (this.$route.name == "OpenDataAPI"){
+            this.$api.openDataApi().then(res=>{this.source = res.data})
         }
     },
     components:{
@@ -37,16 +44,27 @@ export default {
 .min-height10{
     min-height: 800px;
 }
-.conter{
-    margin: auto;
-}
 .min-height6{
     min-height: 600px;
 }
 .bg-white{
     background-color: #fff;
 }
-.max-with9{
-    max-width: 900px;
+.markdown-body {
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  .markdown-body {
+    padding: 15px;
+  }
 }
 </style>

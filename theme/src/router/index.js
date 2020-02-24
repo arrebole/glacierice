@@ -41,6 +41,11 @@ const routes = [
     path: '/models',
     name: 'Models',
     component: Refererence
+  },
+  {
+    path:'/thanks',
+    name:"Thanks",
+    component: ()=>import(/* webpackChunkName: "thanks-page" */ '../views/Thanks.vue')
   }
 ]
 
