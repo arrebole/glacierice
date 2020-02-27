@@ -11,7 +11,7 @@ import (
 func Response(code int, msg string, data interface{}) []byte {
 	result, _ := json.Marshal(
 		map[string]interface{}{
-			"code":    -1,
+			"code":    code,
 			"message": msg,
 			"data":    data,
 		})

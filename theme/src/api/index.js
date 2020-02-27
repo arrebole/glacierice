@@ -1,12 +1,11 @@
-import thank from "./thank"
-import openDataApi from "./open_data_api"
-import contributor from "./contributor"
+import {openDataApi, thanks} from "./static_data"
+import {Get} from "./fetch"
 export class Api {
-    async thank() {
+    async thanks() {
         return {
             code: 0,
             message: "success",
-            data: thank
+            data: thanks
         }
     }
     async openDataApi() {
@@ -20,7 +19,14 @@ export class Api {
       return {
         code:0,
         message: "success",
-        data: contributor
+        data: await Get("/api/data?type=contributor")
+      }
+    }
+    async dataResource(){
+      return {
+        code:0,
+        message: "success",
+        data: await Get("/api/data?type=resource_3rd")
       }
     }
 }

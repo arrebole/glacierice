@@ -24,7 +24,7 @@ export default {
     }
   },
   created(){
-    this.$api.thank().then(res =>{this.source = res.data})
+    this.$api.thanks().then(res =>{this.source = res.data})
   },
   components: {
     Banner,

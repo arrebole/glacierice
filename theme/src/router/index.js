@@ -23,8 +23,8 @@ const routes = [
     component: Content
   },
   {
-    path: '/contribute',
-    name: 'Contribute',
+    path: '/contributor',
+    name: 'Contributor',
     component: Content
   },
   {

@@ -18,7 +18,7 @@ type ResourceGithub struct {
 
 // TableName ...
 func (ResourceGithub) TableName() string {
-	return "resource_github"
+	return "resources_github"
 }
 
 // Resource3RD ...
@@ -37,5 +37,5 @@ type Resource3RD struct {
 
 // TableName ...
 func (Resource3RD) TableName() string {
-	return "resource_3rd"
+	return "resources_3rd"
 }
