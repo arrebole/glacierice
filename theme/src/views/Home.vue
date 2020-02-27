@@ -5,9 +5,9 @@
 
     <Split text="Export Data"></Split>
     <div class="export-data">
-      <Piece to="data-resource" title="Data Resource" content="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam."></Piece>
-      <Piece to="open-data-api" title="Open Data API" content="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam."></Piece>  
-      <Piece to="contribute" title="Contribute" content="Share your own work with us on Github. Include but not limited to data, model, code and wikis."></Piece>    
+      <Piece to="data-resource" title="Data Resource" content="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit."></Piece>
+      <Piece to="open-data-api" title="Open Data API" content="This API primarily aims at feeding standardized data to data-science use cases."></Piece>  
+      <Piece to="contributor" title="Contribute" content="Share your own work with us. Include but not limited to data, model, code and wikis."></Piece>    
     </div>
   
     <Split text="Papers and Wiki"></Split>

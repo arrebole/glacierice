@@ -1,10 +1,12 @@
 {
     "id": 0,
-    "type": "",
-    "name": "",
-    "contributor_id":0,
-    "create_at": "",
+    "resource_type": "",
+    "resource_sub_type":"",
+    "resource_name": "",
+    "contributor_name":"",
+    "initial_time":"",
     "link":"",
     "link_type":"",
-    "description":""
+    "description":"",
+    "language_flag":""
 }

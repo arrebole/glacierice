@@ -20,6 +20,7 @@ func init() {
 
 func main() {
 
-	http.HandleFunc("/", controller.FileServer())
+	http.HandleFunc("/", controller.FileCtl())
+	http.HandleFunc("/api/data", controller.DataCtl())
 	http.ListenAndServe(listenHost+":"+listenPort, nil)
 }

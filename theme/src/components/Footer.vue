@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <div><router-link :to="{ path: 'Thanks' }">Thanks to EVERYONE</router-link></div>
+        <div><router-link :to="{ path: 'thanks' }">Thanks to EVERYONE</router-link></div>
         <div><a>ABOUT</a> <a>LICENCE</a> <a>YEAR</a></div>
     </footer> 
 </template>

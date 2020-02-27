@@ -28,6 +28,9 @@ export default {
         if (this.$route.name == "OpenDataAPI"){
             this.$api.openDataApi().then(res=>{this.source = res.data})
         }
+        if (this.$route.name == "Contributor"){
+            this.$api.contributor().then(res=>{this.source = res.data})
+        }
     },
     components:{
         Banner,

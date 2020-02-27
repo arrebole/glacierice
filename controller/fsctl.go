@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 )
 
-// FileServer ...
-func FileServer() http.HandlerFunc {
+// FileCtl ...
+func FileCtl() http.HandlerFunc {
 	var StaticRoot, _ = filepath.Abs("./theme/dist")
 
 	return func(w http.ResponseWriter, r *http.Request) {
