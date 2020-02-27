@@ -135,3 +135,55 @@ export const openDataApi = `
 </ul>
 <p>If anyone interested in making own contributions, please write an email to us.</p>
 `
+export const crashCourse = `
+<h2>
+	<a id="user-content-a-crash-course-on-mathematical-modeling-of-epidemics" class="anchor"
+		href="#a-crash-course-on-mathematical-modeling-of-epidemics"
+		aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>A Crash Course on
+	Mathematical Modeling of Epidemics</h2>
+<ol>
+	<li>
+		<a href="/pdf/wiki/classical_compartment_models.pdf">Classical Compartment Models</a>: Basics on compartment models and
+		some examples such as SIR, SIS, SEIR and SIQR.</li>
+	<li>
+		<a href="/pdf/wiki/linear_stability_analysis.pdf">Linear Stability Analysis</a>: Linear stability analysis for compartment
+		models.</li>
+</ol>
+`
+export const papers = `
+<h1>
+	<a id="papers" class="anchor" href="#papers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+	Papers(Collection of recent research)
+</h1>
+<ul>
+<li> <a href='/pdf/papers/Assessing spread risk of Wuhan novel coronavirus within and beyond China, January-April 2020_ a travel network-based modelling study.pdf'>Assessing spread risk of Wuhan novel coronavirus within and beyond China, January-April 2020_ a travel network-based modelling study</a></li>
+<li> <a href='/pdf/papers/Early dynamics of transmission and control of 2019-nCoV_ a mathematical modelling study.pdf'>Early dynamics of transmission and control of 2019-nCoV_ a mathematical modelling study</a></li>
+<li> <a href='/pdf/papers/Early epidemiological analysis of the 2019-nCoV outbreak based on a crowdsourced data.pdf'>Early epidemiological analysis of the 2019-nCoV outbreak based on a crowdsourced data</a></li>
+<li> <a href='/pdf/papers/Early evaluation of the Wuhan City travel restrictions in response to the 2019 novel coronavirus outbreak.pdf'>Early evaluation of the Wuhan City travel restrictions in response to the 2019 novel coronavirus outbreak</a></li>
+<li> <a href='/pdf/papers/Effectiveness of airport screening at detecting travellers infected with 2019-nCoV.pdf'>Effectiveness of airport screening at detecting travellers infected with 2019-nCoV</a></li>
+<li> <a href='/pdf/papers/Epidemic doubling time of the 2019 novel coronavirus outbreak by province in mainland China.pdf'>Epidemic doubling time of the 2019 novel coronavirus outbreak by province in mainland China</a></li>
+<li> <a href='/pdf/papers/Epidemiological characteristics of novel coronavirus infection_ A statistical analysis of publicly available case data.pdf'>Epidemiological characteristics of novel coronavirus infection_ A statistical analysis of publicly available case data</a></li>
+<li> <a href='/pdf/papers/Epidemiological identification of a novel infectious disease in real time_ Analysis of the atypical pneumonia outbreak 
+in Wuhan, China, 2019-20.pdf'>Epidemiological identification of a novel infectious disease in real time_ Analysis of the atypical pneumonia outbreak in Wuhan, China, 2019-20</a></li>
+<li> <a href='/pdf/papers/Estimated effectiveness of traveller screening to prevent international spread of 2019 novel coronavirus (2019-nCoV).pdf'>Estimated effectiveness of traveller screening to prevent international spread of 2019 novel coronavirus (2019-nCoV)</a></li>
+<li> <a href='/pdf/papers/Estimating the effective reproduction number of the 2019-nCoV in China.pdf'>Estimating the effective reproduction number of the 2019-nCoV in China</a></li>
+<li> <a href='/pdf/papers/Evidence and characteristics of human-to-human transmission of 2019-nCoV.pdf'>Evidence and characteristics of human-to-human transmission of 2019-nCoV</a></li>
+<li> <a href='/pdf/papers/Integrative Bioinformatics Analysis Provides Insight into the Molecular Mechanisms of 2019-nCoV.pdf'>Integrative Bioinformatics Analysis Provides Insight into the Molecular Mechanisms of 2019-nCoV</a></li>
+<li> <a href='/pdf/papers/Jonathan A.P - Outbreak analytics a developing data science for informing the response.pdf'>Jonathan A</a></li>        
+<li> <a href='/pdf/papers/LINDA J. S. ALLEN - Epidemic Models.pdf'>LINDA J</a></li>
+<li> <a href='/pdf/papers/Mathematical models to characterize early epidemic growth.pdf'>Mathematical models to characterize early epidemic growth</a></li>
+<li> <a href='/pdf/papers/Notes on R0.pdf'>Notes on R0</a></li>
+<li> <a href='/pdf/papers/Novel coronavirus 2019-nCoV_ early estimation of epidemiological parameters and epidemic predictions.pdf'>Novel coronavirus 2019-nCoV_ early estimation of epidemiological parameters and epidemic predictions</a></li>
+<li> <a href='/pdf/papers/Population movement, city closure and spatial transmission of the 2019-nCoV infection in China.pdf'>Population movement, city closure and spatial transmission of the 2019-nCoV infection in China</a></li>
+<li> <a href='/pdf/papers/Real time estimation of the risk of death from novel coronavirus (2019-nCoV) infection_ Inference using exported cases.pdf'>Real time estimation of the risk of death from novel coronavirus (2019-nCoV) infection_ Inference using exported cases</a></li>
+<li> <a href='/pdf/papers/Reconciling early-outbreak preliminary estimates of the basic reproductive number and its uncertainty_ a new framework 
+and applications to the novel coronavirus (2019-nCoV) outbreak.pdf'>Reconciling early-outbreak preliminary estimates of the basic reproductive number and its uncertainty_ a new framework and applications to the novel coronavirus (2019-nCoV) outbreak</a></li>
+<li> <a href='/pdf/papers/Risk assessment of novel coronavirus 2019-nCoV outbreaks outside China.pdf'>Risk assessment of novel coronavirus 2019-nCoV outbreaks outside China</a></li>
+<li> <a href='/pdf/papers/Risk of 2019 novel coronavirus importations throughout China prior to the Wuhan quarantine.pdf'>Risk of 2019 novel coronavirus importations throughout China prior to the Wuhan quarantine</a></li>
+<li> <a href='/pdf/papers/The impact of traffic isolation in Wuhan on the spread of 2019-nCov.pdf'>The impact of traffic isolation in Wuhan on the spread of 2019-nCov</a></li>
+<li> <a href='/pdf/papers/The incubation period of 2019-nCoV from publicly reported confirmed cases_ estimation and application.pdf'>The incubation period of 2019-nCoV from publicly reported confirmed cases_ estimation and application</a></li>
+<li> <a href='/pdf/papers/The incubation period of 2019-nCoV infections among travellers from Wuhan, China.pdf'>The incubation period of 2019-nCoV infections among travellers from Wuhan, China</a></li>
+<li> <a href='/pdf/papers/Transmission and epidemiological characteristics of Novel Coronavirus (2019-nCoV)-Infected Pneumonia(NCIP)_preliminary 
+evidence obtained in comparison with 2003-SARS.pdf'>Transmission and epidemiological characteristics of Novel Coronavirus (2019-nCoV)-Infected Pneumonia(NCIP)_preliminary evidence obtained in comparison with 2003-SARS</a></li>
+</ul>
+`

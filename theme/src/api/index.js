@@ -1,4 +1,4 @@
-import {openDataApi, thanks} from "./static_data"
+import {openDataApi, thanks, crashCourse,papers } from "./static_data"
 import {Get} from "./fetch"
 export class Api {
     async thanks() {
@@ -27,6 +27,26 @@ export class Api {
         code:0,
         message: "success",
         data: await Get("/api/data?type=resource_3rd")
+      }
+    }
+    async crashCourse(){
+      return {
+        code:0,
+        message: "success",
+        data: {
+          link:"https://github.com/wuhan2020/Covid-19-data-science/tree/master/Wiki",
+          html: crashCourse
+        }
+      }
+    }
+    async papers(){
+      return {
+        code:0,
+        message: "success",
+        data: {
+          link:"https://github.com/wuhan2020/Covid-19-data-science/blob/master/Reference/paper.md",
+          html: papers
+        }
       }
     }
 }
