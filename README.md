@@ -8,10 +8,3 @@ This project is for the unexpected outbreak of coronavirus in 2020 spring.
 
 ![](/screenshot/home.png)
 
-
-
-## How to use
-
-```bash
-go build && ./glacierice -port 8080
-```
