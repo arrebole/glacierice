@@ -7,8 +7,25 @@
         <a class="link-code" :href="remoteData.link">link to code</a>
       </template>
     </Split>
+
     <article class="min-height10">
-      <section class="conter min-height6 bg-white max-with9 markdown-body" v-html="remoteData.html"></section>
+      <section
+        class="conter min-height6 bg-white max-with9 markdown-body"
+        v-if="remoteData.html != ''"
+        v-html="remoteData.html"
+      ></section>
+
+      <section
+        class="conter min-height6 bg-white max-with9 markdown-body"
+        v-if="modelsOfDay">
+        <ul>
+        <template v-for="item in modelsOfDay">
+            <li :key="item.title"><a :href="matchLink(item)" target="_blank">{{ item.title }}</a></li>
+        </template>
+        </ul>
+      </section>
+    
+    
     </article>
     <Footer></Footer>
   </div>
@@ -25,6 +42,7 @@ export default {
   data() {
     return {
       title: "Title",
+      modelsOfDay: null,
       remoteData: {
         link: "",
         html: ""
@@ -39,6 +57,15 @@ export default {
     if (this.$route.name == "Papers") {
       this.title = "Papers";
       this.$api.papers().then(res => (this.remoteData = res.data));
+    }
+    if (this.$route.name == "Models") {
+      this.title = "Models of Day";
+      this.$api.modelsOfDay().then(res => (this.modelsOfDay = res.data.data));
+    }
+  },
+  methods:{
+    matchLink(item){
+      return `https://github.com/wuhan2020/Covid-19-data-science/${item.link_github}/${item.link_readme}`
     }
   },
   components: {
@@ -88,7 +115,7 @@ export default {
 .markdown-body {
   box-sizing: border-box;
   min-width: 200px;
-  max-width: 980px;
+  max-width: 890px;
   margin: 10px auto;
   padding: 30px;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,

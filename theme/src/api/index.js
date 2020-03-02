@@ -1,54 +1,61 @@
-import {openDataApi, thanks, crashCourse,papers } from "./static_data"
-import {Get} from "./fetch"
+import { openDataApi, thanks, crashCourse, papers } from "./static_data"
+import { Get } from "./fetch"
 export class Api {
-    async thanks() {
-        return {
-            code: 0,
-            message: "success",
-            data: thanks
-        }
+  async thanks() {
+    return {
+      code: 0,
+      message: "success",
+      data: thanks
     }
-    async openDataApi() {
-      return {
-          code: 0,
-          message: "success",
-          data: openDataApi
+  }
+  async openDataApi() {
+    return {
+      code: 0,
+      message: "success",
+      data: openDataApi
+    }
+  }
+  async contributor() {
+    return {
+      code: 0,
+      message: "success",
+      data: await Get("/api/data?type=contributor")
+    }
+  }
+  async dataResource() {
+    return {
+      code: 0,
+      message: "success",
+      data: await Get("/api/data?type=resource_3rd")
+    }
+  }
+  async crashCourse() {
+    return {
+      code: 0,
+      message: "success",
+      data: {
+        link: "https://github.com/wuhan2020/Covid-19-data-science/tree/master/Wiki",
+        html: crashCourse
       }
     }
-    async contributor(){
-      return {
-        code:0,
-        message: "success",
-        data: await Get("/api/data?type=contributor")
+  }
+  async papers() {
+    return {
+      code: 0,
+      message: "success",
+      data: {
+        link: "https://github.com/wuhan2020/Covid-19-data-science/blob/master/Reference/paper.md",
+        html: papers
       }
     }
-    async dataResource(){
-      return {
-        code:0,
-        message: "success",
-        data: await Get("/api/data?type=resource_3rd")
-      }
+  }
+  async modelsOfDay() {
+    return {
+      code: 0,
+      message: "success",
+      data: await await Get("/api/data?type=resource_github")
     }
-    async crashCourse(){
-      return {
-        code:0,
-        message: "success",
-        data: {
-          link:"https://github.com/wuhan2020/Covid-19-data-science/tree/master/Wiki",
-          html: crashCourse
-        }
-      }
-    }
-    async papers(){
-      return {
-        code:0,
-        message: "success",
-        data: {
-          link:"https://github.com/wuhan2020/Covid-19-data-science/blob/master/Reference/paper.md",
-          html: papers
-        }
-      }
-    }
+  }
 }
 
 export default function install(Vue) {

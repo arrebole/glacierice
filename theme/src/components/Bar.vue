@@ -27,7 +27,7 @@ export default {
     align-items: center;
     height: 90px;
     margin: 10px 20px;
-    font-size: 14px;
+    font-size: 16px;
     background-color: #fff; 
     border: 1px solid rgb(255, 255, 255);
 }
@@ -53,6 +53,7 @@ export default {
 
 .bar-text > p{
     margin: 5px;
+    font-size: 14px;
     color: rgb(105, 105, 105);
 }
 .img{
@@ -60,8 +61,8 @@ export default {
     /* background-color: rgb(177, 177, 177); */
 }
 .bar-log{
-    max-width: 40px;
-    height: 50px;
-    padding: 0 10px;
+    width: 32px;
+    height: 40px;
+    margin: 0 15px;
 }
 </style>

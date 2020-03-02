@@ -1,9 +1,9 @@
 <template>
     <div class="piece">
-        <router-link :to="to">
-            <h2>{{ title }}</h2>
+        <router-link :to="to" >
+            <h2 style="font-size:20px" >{{ title }}</h2>
         </router-link>
-        <p>{{ content }}</p>    
+        <p style="font-size:14px" >{{ content }}</p>    
     </div>    
 </template>
 

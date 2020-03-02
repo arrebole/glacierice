@@ -18,10 +18,12 @@ export default {
 <style lang="css" scoped>
 .split{
     max-width: 900px;
+    height: 45px;
     margin: auto;
     padding: 0px 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .split > h2 {
     color: rgb(65, 65, 65);

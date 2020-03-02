@@ -101,11 +101,12 @@ export default {
 .bg-white {
   background-color: #fff;
 }
+
+
 .markdown-body {
   box-sizing: border-box;
-  min-width: 200px;
-  max-width: 980px;
-  margin: 0 auto;
+  max-width: 890px;
+  margin: auto;
   padding: 30px;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
     sans-serif, Apple Color Emoji, Segoe UI Emoji;

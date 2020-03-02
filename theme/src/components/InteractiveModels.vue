@@ -55,10 +55,10 @@ export default {
 
 <style scoped>
 .interactive-models {
-  padding: 10px;
   height: 400px;
+  max-width: 890px;
+  margin: auto;
   background-color: #fff;
-  margin: 20px;
 }
 .canvas {
   width: 100%;

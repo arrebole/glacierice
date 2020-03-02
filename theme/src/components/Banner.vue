@@ -27,6 +27,9 @@ export default {}
     background-color: #009687;
 }
 
+.banner-text:hover{
+    color: rgb(233, 233, 233);
+}
 .banner-text-line > div{
     display: inline;
     padding: 5px;

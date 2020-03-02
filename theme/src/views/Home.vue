@@ -3,8 +3,8 @@
     <!-- <Header></Header> -->
     <Banner></Banner>
 
-    <Split text="Export Data"></Split>
-    <div class="export-data">
+    <Split text="Explore Data"></Split>
+    <div class="explore-data">
       <Piece to="data-resource" title="Data Resource" content="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit."></Piece>
       <Piece to="open-data-api" title="Open Data API" content="This API primarily aims at feeding standardized data to data-science use cases."></Piece>  
       <Piece to="contributor" title="Contribute" content="Share your own work with us. Include but not limited to data, model, code and wikis."></Piece>    
@@ -75,7 +75,7 @@ export default {
   background-color: #ededed;
   font-family: 'Helvetica';
 }
-.export-data{
+.explore-data{
   padding: 0 20px;
   margin: auto;
   display: flex;
