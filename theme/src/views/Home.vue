@@ -50,9 +50,9 @@
 
         <Split text="Visualizations"></Split>
         <Visualizations></Visualizations>
-      </div >
-      <div class="side" style="display:flex;flex-direction:row-reverse">
-        <SideBar/>
+      </div>
+      <div class="side display-none">
+        <SideBar />
       </div>
     </div>
     <Footer></Footer>
@@ -98,12 +98,11 @@ export default {
   justify-content: space-between;
 }
 .center {
-  padding: 0px 10px;
   width: 100%;
-  max-width: 950px;
+  max-width: 670px;
   box-sizing: border-box;
 }
-.side{
+.side {
   flex: 1;
   width: 250px;
 }
@@ -112,9 +111,13 @@ export default {
   height: 80px;
   padding: 5px;
 }
+
 @media screen and (max-width: 720px) {
   .explore-data {
     flex-direction: column;
+  }
+  .side{
+    display: none;
   }
 }
 </style>

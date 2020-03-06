@@ -41,6 +41,7 @@ export default {};
   color: rgba(255, 255, 255, 0.87);
   font-size: 20px;
   padding: 10px;
+  margin-left: 45px;
 }
 .sidebar > div {
   padding: 10px;

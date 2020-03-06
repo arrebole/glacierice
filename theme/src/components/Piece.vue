@@ -18,9 +18,11 @@ export default {
 <style lang="css" scoped>
 .piece {
   background-color: #fff;
+  box-sizing: border-box;
+  height: 160px;
   border: 1px solid rgb(255, 255, 255);
-  padding: 60px 20px 10px 20px;
-  margin: 5px;
+  padding: 40px 15px 10px 15px;
+  margin: 2px 0;
 }
 .piece > a {
   text-decoration: none;
@@ -42,7 +44,7 @@ export default {
 
 @media screen and (min-width: 720px) {
   .piece {
-    max-width: 250px;
+    max-width: 210px;
   }
 }
 @media screen and (max-width: 720px) {
