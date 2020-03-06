@@ -26,7 +26,7 @@ export default {
     display: flex;
     align-items: center;
     height: 90px;
-    margin: 10px 20px;
+    margin: 10px 0px;
     font-size: 16px;
     background-color: #fff; 
     border: 1px solid rgb(255, 255, 255);

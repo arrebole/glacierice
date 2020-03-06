@@ -55,18 +55,12 @@ export default {
 
 <style scoped>
 .interactive-models {
-  height: 400px;
-  max-width: 890px;
+  width: 100%;
   margin: auto;
   background-color: #fff;
 }
 .canvas {
   width: 100%;
   height: 100%;
-}
-@media (max-width: 767px) {
-  .interactive-models {
-    height: 300px;
-  }
 }
 </style>

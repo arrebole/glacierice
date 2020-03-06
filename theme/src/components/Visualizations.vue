@@ -8,9 +8,11 @@
 <style scoped>
 .visualizations {
   height: 400px;
+  width: 100%;
   background-color: rgb(253, 253, 253);
-  margin: 10px 20px 30px 20px;
+  margin: 10px 0px 30px 0px;
   padding: 10px;
+  box-sizing: border-box;
 }
 .visualizations-iframe{
   width: 100%;

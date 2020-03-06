@@ -18,12 +18,12 @@ footer > div > a{
     color: #fff;
 }
 footer > div{
-    margin: 4px 4px;
+    margin: 6px 6px;
 }
 footer > div > a:hover{
     color: rgb(216, 216, 216);
 }
 footer > div > a{
-    padding: 0 20px;
+    margin: 0px 8%;
 }
 </style>

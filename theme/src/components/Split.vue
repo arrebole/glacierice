@@ -17,15 +17,16 @@ export default {
 
 <style lang="css" scoped>
 .split{
-    max-width: 900px;
+    max-width: 950px;
     height: 45px;
     margin: auto;
-    padding: 0px 20px;
+    padding: 0px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .split > h2 {
+    font-size: 24px;
     color: rgb(65, 65, 65);
 }
 </style>
