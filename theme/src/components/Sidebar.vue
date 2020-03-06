@@ -9,7 +9,7 @@
       </div>
       <div style="padding:10px;font-size:16px">
         <span class="shape"></span>
-        <router-link :to="{name: 'OpenDataApi'}">Open Data API</router-link>
+        <router-link :to="{name: 'OpenDataAPI'}">Open Data API</router-link>
       </div>
     </div>
     <div style="font-size:16px">
