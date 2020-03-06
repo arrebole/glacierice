@@ -67,7 +67,7 @@ export default {};
   margin: 0px 8px 0 0;
   border-radius: 50%;
 }
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1100px) {
   .sidebar {
     display: none;
   }
