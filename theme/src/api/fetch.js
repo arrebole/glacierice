@@ -1,3 +1,6 @@
-export function Get(url){
-    return fetch(url).then(res=>res.json())
+export function Get(url) {
+    return fetch(url, {
+        method: 'GET',
+        mode: 'cors',
+    }).then(res => res.json())
 }

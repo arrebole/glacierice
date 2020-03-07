@@ -11,6 +11,9 @@ func FileCtl() http.HandlerFunc {
 	var StaticRoot, _ = filepath.Abs("./theme/dist")
 
 	return func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Add("Access-Control-Allow-Origin", "*")
+		w.Header().Add("Access-Control-Allow-Methods", "GET, POST")
+
 		if fileExist(filepath.Join(StaticRoot, r.RequestURI)) {
 			http.FileServer(http.Dir(StaticRoot)).ServeHTTP(w, r)
 			return

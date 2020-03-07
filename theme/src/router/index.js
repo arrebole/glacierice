@@ -43,9 +43,12 @@ const routes = [
     component: Refererence
   },
   {
-    path:'/thanks',
-    name:"Thanks",
-    component: ()=>import(/* webpackChunkName: "thanks-page" */ '../views/Thanks.vue')
+    path: '/thanks',
+    name: "Thanks",
+    component: () => import(/* webpackChunkName: "thanks-page" */ '../views/Thanks.vue')
+  }, {
+    path: '*',
+    redirect: { name: 'Home' }
   }
 ]
 
@@ -53,7 +56,7 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes,
-  scrollBehavior () {
+  scrollBehavior() {
     return { x: 0, y: 0 }
   }
 })

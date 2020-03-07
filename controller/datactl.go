@@ -22,6 +22,8 @@ func Response(code int, msg string, data interface{}) []byte {
 func DataCtl() http.HandlerFunc {
 
 	return func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Add("Access-Control-Allow-Origin", "*")
+		w.Header().Add("Access-Control-Allow-Methods", "GET, POST")
 
 		switch r.FormValue("type") {
 		case "contributor":

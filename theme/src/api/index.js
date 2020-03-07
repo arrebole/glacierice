@@ -19,14 +19,14 @@ export class Api {
     return {
       code: 0,
       message: "success",
-      data: await Get("/api/data?type=contributor")
+      data: await Get("http://glaciericer.gkdark.xyz/api/data?type=contributor")
     }
   }
   async dataResource() {
     return {
       code: 0,
       message: "success",
-      data: await Get("/api/data?type=resource_3rd")
+      data: await Get("http://glaciericer.gkdark.xyz/api/data?type=resource_3rd")
     }
   }
   async crashCourse() {
@@ -53,7 +53,7 @@ export class Api {
     return {
       code: 0,
       message: "success",
-      data: await await Get("/api/data?type=resource_github")
+      data: await await Get("http://glaciericer.gkdark.xyz/api/data?type=resource_github")
     }
   }
 }
